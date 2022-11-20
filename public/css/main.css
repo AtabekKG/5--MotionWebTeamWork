@@ -960,6 +960,18 @@
   #signIn .signIn .signIn--nav a {
     margin-left: 121px !important;
   }
+  #red .red .red--nav h1 {
+    font-size: 26px !important;
+  }
+  #red .red .red--nav img {
+    margin-left: 149px !important;
+  }
+  #red .red .red--nav input {
+    width: 420px !important;
+  }
+  #red .red .red--nav a {
+    margin-left: 121px !important;
+  }
 }
 @media (max-width: 420px) {
   #signIn .signIn .signIn--nav h1 {
@@ -979,6 +991,23 @@
     font-size: 14px !important;
     margin-left: 100px !important;
   }
+  #red .red .red--nav h1 {
+    font-size: 24px !important;
+  }
+  #red .red .red--nav img {
+    margin-left: 110px !important;
+  }
+  #red .red .red--nav input {
+    width: 320px !important;
+  }
+  #red .red .red--nav__horrol--btn button {
+    font-size: 20px !important;
+    padding: 9px 72px !important;
+  }
+  #red .red .red--nav a {
+    font-size: 14px !important;
+    margin-left: 100px !important;
+  }
 }
 @media (max-width: 340px) {
   #signIn .signIn .signIn--nav h1 {
@@ -995,6 +1024,23 @@
     padding: 9px 70px !important;
   }
   #signIn .signIn .signIn--nav a {
+    font-size: 16px !important;
+    margin-left: 50px !important;
+  }
+  #red .red .red--navbar h1 {
+    font-size: 18px !important;
+  }
+  #red .red .red--navbar img {
+    margin-left: 90px !important;
+  }
+  #red .red .red--navbar input {
+    width: 275px !important;
+  }
+  #red .red .red--navbar__horrol--btn button {
+    font-size: 20px !important;
+    padding: 9px 70px !important;
+  }
+  #red .red .red--navbar a {
     font-size: 16px !important;
     margin-left: 50px !important;
   }
