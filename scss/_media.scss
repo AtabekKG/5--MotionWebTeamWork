@@ -1,3 +1,55 @@
+@media(max-width: 540px) {
+  #signIn {
+    .signIn {
+      .signIn--nav {
+        h1 {
+          font-size: 26px !important;
+        }
+
+        img {
+          margin-left: 149px !important;
+        }
+
+        input {
+          width: 420px !important;
+        }
+
+        a {
+          margin-left: 121px !important;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 420px) {
+  #signIn {
+    .signIn {
+      .signIn--nav {
+        h1 {
+          font-size: 24px !important;
+        }
+
+        img {
+          margin-left: 110px !important;
+        }
+
+        input {
+          width: 320px !important;
+        }
+
+        &__hero {
+          &--btn {
+            button {
+              font-size: 20px !important;
+              padding: 9px 72px !important;
+            }
+          }
+        }
+
+        a {
+          font-size: 14px !important;
+          margin-left: 100px !important;
 @media(max-width:540px){
   #signIn{
     .signIn{
@@ -496,6 +548,9 @@
       }
     }
   }
+
+
+}
 
   // blogs (Наши курсы)
   #blogs {
