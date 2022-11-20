@@ -108,6 +108,99 @@
   height: 100%;
 }
 
+#hero--inner2 .hero--inner2 {
+  padding: 120px 0 100px 0;
+}
+#hero--inner2 .hero--inner2__desc span {
+  font-weight: 400;
+  font-size: 12px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#hero--inner2 .hero--inner2__desc--group {
+  display: flex;
+  align-items: start;
+  column-gap: 140px;
+  margin: 20px 0 30px 0;
+}
+#hero--inner2 .hero--inner2__desc--group__left {
+  width: 36%;
+}
+#hero--inner2 .hero--inner2__desc--group__left h1 {
+  font-weight: 700;
+  font-size: 36px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+#hero--inner2 .hero--inner2__desc--group__left p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+#hero--inner2 .hero--inner2__desc--group__right {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding-top: 15px;
+}
+#hero--inner2 .hero--inner2__desc--group__right--topGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: end;
+}
+#hero--inner2 .hero--inner2__desc--group__right--topGroup h3 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+#hero--inner2 .hero--inner2__desc--group__right--topGroup span {
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+#hero--inner2 .hero--inner2__desc--group__right--progress {
+  width: 100%;
+  height: 4px;
+  border-radius: 15px;
+  background-color: #9099A3;
+}
+#hero--inner2 .hero--inner2__desc--group__right--progress div {
+  width: 40%;
+  height: 100%;
+  background-color: green;
+  border-radius: 15px;
+}
+#hero--inner2 .hero--inner2__desc--group__right--btmGroup {
+  display: flex;
+  justify-content: space-between;
+}
+#hero--inner2 .hero--inner2__desc--group__right--btmGroup__left div {
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+}
+#hero--inner2 .hero--inner2__desc--group__right--btmGroup__left div span {
+  font-weight: 400;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+#hero--inner2 .hero--inner2__desc--group__right--btmGroup__left div p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #9099A3;
+}
+#hero--inner2 .hero--inner2__desc--group__right--btmGroup__left p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
 #hero--inner .hero--inner {
   padding: 120px 0 100px 0;
 }
