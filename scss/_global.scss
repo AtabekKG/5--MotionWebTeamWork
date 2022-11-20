@@ -14,7 +14,6 @@
   align-items: start;
 }
 
-@mixin d-f_js-sb {
   display: flex;
   justify-content: space-between;
 }
@@ -41,7 +40,6 @@
   left: 0;
 }
 
-// border and outline NONE
 //variables
 @mixin b-and-o__none {
   border: none;
