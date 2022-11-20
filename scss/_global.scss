@@ -5,3 +5,69 @@
 .swiper-slide {
   height: 230px;
 }
+
+
+// header
+#header {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    padding: 24px 30px;
+    background-color: rgba(140, 179, 217, 0.2);
+    border-bottom: 2px solid #FFFFFF;
+    backdrop-filter: blur(50px);
+
+    &--nav {
+      display: flex;
+      gap: 50px;
+
+      &__item {
+        font-weight: 500;
+        font-size: 14px;
+        color: #FFFFFF;
+        transition: all .4s ease-in;
+
+        &:hover {
+          color: #c6d8eb;
+          transform: translateY(2px);
+        }
+      }
+    }
+    &--group {
+      display: flex;
+      gap: 35px;
+
+      select {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-weight: 400;
+        font-size: 15px;
+        color:#FFFFFF;
+
+        option {
+          background-color: #000;
+        }
+      }
+      a {
+        display: block;
+        font-weight: 500;
+        font-size: 18px;
+        color: #FFFFFF;
+        padding: 6px 22px;
+        background: #0096C7;
+        border-radius: 10px;
+        transition: all .4s ease-in;
+        &:hover {
+          transform: translateY(2px);
+        }
+      }
+    }
+  }
+}

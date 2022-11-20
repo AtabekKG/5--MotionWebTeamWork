@@ -6,6 +6,63 @@
   height: 230px;
 }
 
+#header .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  padding: 24px 30px;
+  background-color: rgba(140, 179, 217, 0.2);
+  border-bottom: 2px solid #FFFFFF;
+  backdrop-filter: blur(50px);
+}
+#header .header--nav {
+  display: flex;
+  gap: 50px;
+}
+#header .header--nav__item {
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+  transition: all 0.4s ease-in;
+}
+#header .header--nav__item:hover {
+  color: #c6d8eb;
+  transform: translateY(2px);
+}
+#header .header--group {
+  display: flex;
+  gap: 35px;
+}
+#header .header--group select {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 15px;
+  color: #FFFFFF;
+}
+#header .header--group select option {
+  background-color: #000;
+}
+#header .header--group a {
+  display: block;
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+  padding: 6px 22px;
+  background: #0096C7;
+  border-radius: 10px;
+  transition: all 0.4s ease-in;
+}
+#header .header--group a:hover {
+  transform: translateY(2px);
+}
+
 * {
   margin: 0;
   padding: 0;
