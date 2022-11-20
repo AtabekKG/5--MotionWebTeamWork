@@ -557,6 +557,130 @@ $fontSize-18: 18px;
     }
   }
 }
+// course--program ПРОГРАММА КУРСА (Наши курсы)
+#course--program {
+  .course--program {
+    &__title {
+      @include title;
+      font-size: 36px;
+      margin-bottom: 20px;
+
+    }
+    &__blog {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+
+      &--accordion {
+        width: 100%;
+        position: relative;
+        padding: 20px 0 10px 10px;
+        border: 1px solid #9099A3;
+        border-radius: 15px;
+
+
+        &__btn {
+          font-weight: 700;
+          font-size: 18px;
+          text-transform: capitalize;
+          color: $lightColor;
+          padding: 7px 20px;
+          background: #0096C7;
+          border-radius: 15px;
+          transition: all .4s ease-in;
+
+          &:hover {
+            transform: translateY(2px);
+          }
+        }
+        &__title {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+          text-transform: capitalize;
+          color: $lightColor;
+          margin-left: 44px;
+
+          i {
+            font-size: 22px;
+            position: absolute;
+            right: 14px;
+            top: 25px;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+          }
+        }
+        input {
+          display: none;
+        }
+        &__wrap {
+          margin-top: 2px;
+          max-height: 0;
+          overflow: hidden;
+          display: flex;
+          justify-content: end;
+          transition: max-height 0.6s ease-in;
+
+          ul {
+            width: 60%;
+            padding: 25px 0;
+
+            li {
+              a {
+                font-weight: 500;
+                font-size: 16px;
+                text-transform: capitalize;
+                color: $lightColor;
+              }
+            }
+          }
+        }
+        input:checked + .course--program__blog--accordion__title i {
+          transform: rotate(180deg);
+        }
+        input:checked ~ .course--program__blog--accordion__wrap {
+          max-height: 500px;
+        }
+      }
+    }
+    &__btns {
+      margin-top: 30px;
+      display: flex;
+      gap: 20px;
+
+      button {
+        border-radius: 10px;
+        padding: 7px 20px;
+        font-weight: 900;
+        font-size: 18px;
+        transition: all .4s ease-in;
+
+        &:hover {
+          transform: translateY(2px);
+        }
+      }
+      &--first {
+        background: #0096C7;
+        color: $lightColor;
+      }
+      &--second {
+        border: 2px solid #9099A3;
+        background-color: transparent;
+        color: #9099A3;
+
+        &:hover {
+          background: #0096C7;
+          color: $lightColor;
+          border: 2px solid transparent;
+        }
+      }
+    }
+  }
+}
+
 // masterclass
 #masterclass {
   padding-bottom: 98px;
