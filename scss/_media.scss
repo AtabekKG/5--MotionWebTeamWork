@@ -50,6 +50,7 @@
         a {
           font-size: 14px !important;
           margin-left: 100px !important;
+        }
 @media(max-width:540px){
   #signIn{
     .signIn{
@@ -196,10 +197,41 @@
 
       .answers--accordion {
         width: 100%;
-      }
     }
   }
 
+
+}
+
+@media(max-width: 340px) {
+  #signIn {
+    .signIn {
+      .signIn--nav {
+        h1 {
+          font-size: 18px !important;
+        }
+
+        img {
+          margin-left: 90px !important;
+        }
+
+        input {
+          width: 275px !important;
+        }
+
+        &__hero {
+          &--btn {
+            button {
+              font-size: 20px !important;
+              padding: 9px 70px !important;
+            }
+
+          }
+        }
+
+        a {
+          font-size: 16px !important;
+          margin-left: 50px !important;
   // footer
   #footer {
     .footer {
@@ -551,6 +583,7 @@
 
 
 }
+
 
   // blogs (Наши курсы)
   #blogs {
