@@ -683,6 +683,126 @@
   max-height: 500px;
 }
 
+#footer .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+}
+#footer .footer--logo {
+  width: 12%;
+}
+#footer .footer--blogs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: start;
+  width: 50%;
+}
+#footer .footer--blogs__blog {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 18px;
+}
+#footer .footer--blogs__blog h3 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+#footer .footer--blogs__blog a {
+  font-weight: 400;
+  font-size: 14px;
+  color: #9099A3;
+}
+#footer .footer--blogs__blog p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #9099A3;
+}
+#footer .footer--blogs__blog p a {
+  font-weight: 400;
+  font-size: 14px;
+  color: #9099A3;
+}
+#footer .footer--blogs__blog2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 18px;
+}
+#footer .footer--blogs__blog2 h3 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+#footer .footer--blogs__blog2 p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #9099A3;
+}
+#footer .footer--blogs__blog2 p a {
+  font-weight: 400;
+  font-size: 14px;
+  color: #9099A3;
+}
+#footer .footer--icons {
+  width: 14%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 18px;
+}
+#footer .footer--icons h3 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+#footer .footer--icons__blogs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+#footer .footer--icons__blogs--blog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #DADADA;
+}
+#footer .footer--bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 80px;
+}
+#footer .footer--bottom p {
+  font-weight: 400;
+  font-size: 9px;
+  color: #9099A3;
+}
+#footer .footer--bottom__group {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+#footer .footer--bottom__group a {
+  font-weight: 400;
+  font-size: 9px;
+  text-decoration-line: underline;
+  color: #9099A3;
+}
+#footer .footer--bottom__group div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
