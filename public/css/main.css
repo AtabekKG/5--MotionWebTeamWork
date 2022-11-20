@@ -947,6 +947,20 @@
   display: none;
 }
 
+@media (max-width: 540px) {
+  #signIn .signIn .signIn--nav h1 {
+    font-size: 26px !important;
+  }
+  #signIn .signIn .signIn--nav img {
+    margin-left: 149px !important;
+  }
+  #signIn .signIn .signIn--nav input {
+    width: 420px !important;
+  }
+  #signIn .signIn .signIn--nav a {
+    margin-left: 121px !important;
+  }
+}
 * {
   margin: 0;
   padding: 0;
