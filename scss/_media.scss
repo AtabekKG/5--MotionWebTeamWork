@@ -1,0 +1,144 @@
+@media (max-width: 1024px) {
+  // hero
+  #hero {
+    .hero {
+      .hero--desc {
+        width: 42%;
+
+        p {
+          font-size: 20px;
+        }
+
+        h1 {
+          font-size: 40px;
+        }
+      }
+
+      .hero--bg {
+        width: 44%;
+      }
+    }
+  }
+
+  // courses
+  #courses {
+    .courses--blogs {
+
+      .swiper {
+        &-wrapper {
+          gap: 310px !important;
+
+        }
+      }
+
+      &__blog {
+        width: 185% !important;
+      }
+
+    }
+
+    .courses--groups {
+      &__blog {
+        width: 46% !important;
+        height: 360px !important;
+      }
+    }
+  }
+
+  // masterclass
+  #masterclass {
+    .masterclass {
+      .masterclass--blogs {
+        &__blog {
+          width: 32%;
+        }
+      }
+    }
+  }
+
+  // form
+  #form {
+    .form {
+      .form--blog {
+        &__desc {
+          width: 50%;
+        }
+
+        &__btns {
+          width: 48%;
+        }
+      }
+
+      .form--group {
+        &__desc {
+          width: 42%;
+
+          &--title {
+            font-size: 30px;
+          }
+        }
+
+        &__form {
+          width: 58%;
+
+          &--group {
+            flex-direction: column;
+            row-gap: 14px;
+
+            p {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // reviews
+  #reviews {
+    .reviews {
+
+      .swiper {
+        .swiper-wrapper {
+          gap: 72px;
+        }
+      }
+
+      .reviews--blog {
+        width: 115%;
+      }
+    }
+  }
+
+  // answers
+  #answers {
+    .answers {
+      flex-wrap: wrap;
+
+      .answers--desc {
+        width: 100%;
+        display: flex;
+        align-items: start;
+        margin-bottom: 18px;
+      }
+
+      .answers--accordion {
+        width: 100%;
+      }
+    }
+  }
+
+  // footer
+  #footer {
+    .footer {
+      .footer--logo {
+        width: 10%;
+      }
+
+      .footer--icons {
+        width: 20%;
+      }
+    }
+  }
+
+}

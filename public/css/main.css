@@ -1702,6 +1702,79 @@
   transform: translateY(2px);
 }
 
+@media (max-width: 1024px) {
+  #hero .hero .hero--desc {
+    width: 42%;
+  }
+  #hero .hero .hero--desc p {
+    font-size: 20px;
+  }
+  #hero .hero .hero--desc h1 {
+    font-size: 40px;
+  }
+  #hero .hero .hero--bg {
+    width: 44%;
+  }
+  #courses .courses--blogs .swiper-wrapper {
+    gap: 310px !important;
+  }
+  #courses .courses--blogs__blog {
+    width: 185% !important;
+  }
+  #courses .courses--groups__blog {
+    width: 46% !important;
+    height: 360px !important;
+  }
+  #masterclass .masterclass .masterclass--blogs__blog {
+    width: 32%;
+  }
+  #form .form .form--blog__desc {
+    width: 50%;
+  }
+  #form .form .form--blog__btns {
+    width: 48%;
+  }
+  #form .form .form--group__desc {
+    width: 42%;
+  }
+  #form .form .form--group__desc--title {
+    font-size: 30px;
+  }
+  #form .form .form--group__form {
+    width: 58%;
+  }
+  #form .form .form--group__form--group {
+    flex-direction: column;
+    row-gap: 14px;
+  }
+  #form .form .form--group__form--group p {
+    width: 100%;
+  }
+  #reviews .reviews .swiper .swiper-wrapper {
+    gap: 72px;
+  }
+  #reviews .reviews .reviews--blog {
+    width: 115%;
+  }
+  #answers .answers {
+    flex-wrap: wrap;
+  }
+  #answers .answers .answers--desc {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    margin-bottom: 18px;
+  }
+  #answers .answers .answers--accordion {
+    width: 100%;
+  }
+  #footer .footer .footer--logo {
+    width: 10%;
+  }
+  #footer .footer .footer--icons {
+    width: 20%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
