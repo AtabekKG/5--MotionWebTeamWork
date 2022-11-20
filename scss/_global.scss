@@ -42,7 +42,7 @@
   left: 0;
 }
 
-// border and outline NONE
+//variables
 @mixin b-and-o__none {
   border: none;
   outline: none;
@@ -2027,6 +2027,15 @@ $fontSize-18: 18px;
       }
 
     }
+
+  }
+}
+
+
+// burger-menu
+.burger {
+  display: none;
+}
 
 #header {
   .header {
