@@ -1560,6 +1560,349 @@
   transform: translateY(2px);
 }
 
+@media (max-width: 450px) {
+  #hero .hero .hero--desc {
+    width: 77%;
+  }
+  #hero .hero .hero--desc p {
+    font-size: 15px;
+  }
+  #hero .hero .hero--desc h1 {
+    font-size: 28px;
+  }
+  #course--program2 .course--program2 .course--program2__blog {
+    width: 100%;
+  }
+  #course--program2 .course--program2 .course--program2__blog--accordion__wrap {
+    justify-content: start;
+  }
+  #hero--inner .hero--inner .hero--inner__desc--group__left {
+    width: 84%;
+  }
+  #hero--inner .hero--inner .hero--inner__bg iframe {
+    height: 268px;
+  }
+  #about--course .about--course .about--course__title {
+    font-size: 28px;
+  }
+  #about--course .about--course p {
+    font-size: 15px !important;
+    line-height: 22px !important;
+    width: 100% !important;
+  }
+  #about--course .about--course .about--course__blog--title {
+    width: 90%;
+  }
+  #about--course .about--course .about--course__blog ul li {
+    width: 100%;
+  }
+  #course--program .course--program .course--program__blog {
+    width: 100%;
+  }
+  #course--program .course--program .course--program__blog--accordion__wrap {
+    justify-content: start;
+  }
+  #course--program .course--program .course--program__btns {
+    flex-direction: column;
+    align-items: center;
+  }
+  #blogs .blogs .blogs--blog {
+    width: 94%;
+  }
+  #margulan .margulan {
+    height: 720px !important;
+  }
+  #coach .coach .coach--title {
+    width: 100%;
+    text-align: center;
+  }
+  #coach .coach .coach--blogs__blog {
+    width: 100%;
+  }
+  #courses .courses .courses--group__title {
+    font-size: 28px;
+  }
+  #courses .courses .courses--group__group--blog {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+  }
+  #courses .courses .courses--blogs .swiper {
+    height: 558px;
+  }
+  #courses .courses .courses--blogs .swiper-wrapper {
+    gap: 296px !important;
+  }
+  #courses .courses .courses--blogs__blog {
+    width: 298% !important;
+    padding-top: 324px;
+    padding-bottom: 228px;
+  }
+  #courses .courses .courses--blogs__blog--img {
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+  }
+  #courses .courses .courses--blogs__blog--desc {
+    margin: 8px 0 30px 0;
+  }
+  #courses .courses .courses--blogs__blog::after {
+    content: "";
+    position: absolute;
+    top: 290px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #0096C7;
+  }
+  #courses .courses .courses--groups {
+    row-gap: 35px;
+    margin-top: 35px;
+  }
+  #courses .courses .courses--groups__blog {
+    height: 286px !important;
+  }
+  #courses .courses .courses--groups__blog h2 {
+    font-size: 17px;
+    line-height: 22px;
+  }
+  #courses .courses .courses--groups__blog p {
+    font-size: 14px;
+  }
+  #courses .courses .courses--btn {
+    font-size: 16px;
+    padding: 9px 22px;
+  }
+  #masterclass .masterclass .masterclass--title {
+    font-size: 28px;
+  }
+  #masterclass .masterclass .masterclass--group button {
+    font-size: 16px;
+  }
+  #masterclass .masterclass .masterclass--blogs__blog {
+    height: 244px;
+  }
+  #masterclass .masterclass .masterclass--blogs__blog--title {
+    font-size: 17px;
+  }
+  #masterclass .masterclass .masterclass--blogs__blog--lead {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #masterclass .masterclass .masterclass--btn {
+    padding: 9px 16px;
+    font-size: 14px;
+  }
+  #form .form .form--blog {
+    height: 245px;
+    row-gap: 0;
+  }
+  #form .form .form--blog__desc h2 {
+    font-size: 17px;
+  }
+  #form .form .form--blog__desc p {
+    width: 78%;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  #form .form .form--blog__btns button {
+    font-size: 16px;
+    padding: 9px 22px;
+  }
+  #form .form .form--group__desc--title {
+    font-size: 28px;
+  }
+  #form .form .form--group__form--blog input {
+    height: 48px;
+  }
+  #form .form .form--group__form--group {
+    width: 65%;
+  }
+  #form .form .form--group__form--group p {
+    font-size: 14px;
+  }
+  #form .form .form--group__form--group button {
+    padding: 9px 40px;
+    font-size: 17px;
+  }
+  #reviews .reviews .swiper .swiper-wrapper {
+    gap: 268px;
+  }
+  #reviews .reviews .reviews--blog {
+    width: 260%;
+  }
+  #answers .answers .answers--desc {
+    align-items: center;
+    justify-content: space-between;
+  }
+  #answers .answers .answers--desc h1 {
+    font-size: 28px;
+  }
+  #answers .answers .answers--desc__img {
+    width: 60px;
+  }
+  #footer .footer .footer--blogs__blog2 {
+    width: 59%;
+  }
+  #footer .footer .footer--icons {
+    width: 43%;
+  }
+}
+@media (max-width: 400px) {
+  #hero--inner2 .hero--inner2 .hero--inner2__desc--group__left {
+    width: 84%;
+  }
+  #hero--inner2 .hero--inner2 .hero--inner2__desc--group__left h1 {
+    font-size: 26px;
+  }
+  #hero--inner2 .hero--inner2 .hero--inner2__desc--group__right {
+    width: 84%;
+  }
+  #course--program2 .course--program2 .course--program2__blog--accordion {
+    flex-direction: column;
+    gap: 8px;
+  }
+  #course--program2 .course--program2 .course--program2__blog--accordion__title {
+    width: 90%;
+    text-align: center;
+  }
+  #hero--inner .hero--inner .hero--inner__bg iframe {
+    height: 220px;
+  }
+  #about--course .about--course .about--course__blog ul li {
+    width: 100%;
+  }
+  #about--course .about--course .about--course__blog ul li::before {
+    top: 11px;
+  }
+  #course--program .course--program .course--program__blog--accordion {
+    flex-direction: column;
+    gap: 8px;
+  }
+  #course--program .course--program .course--program__blog--accordion__title {
+    width: 90%;
+    text-align: center;
+  }
+  #blogs .blogs .blogs--blog {
+    width: 100%;
+  }
+  #group .group .group--title {
+    font-size: 25px;
+    line-height: 36px;
+  }
+  #group .group .group--desc {
+    width: 100%;
+  }
+  #margulan .margulan {
+    padding: 30px !important;
+  }
+  #courses .courses .courses--groups__blog {
+    height: 330px !important;
+  }
+  #courses .courses .courses--groups__blog h2 {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  #courses .courses .courses--groups__blog--team {
+    align-items: start;
+    gap: 18px;
+  }
+  #form .form .form--group__desc p {
+    width: 92%;
+  }
+  #form .form .form--group__form--group {
+    width: 78%;
+  }
+  #reviews .reviews .reviews--title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  #reviews .reviews .reviews--blog {
+    width: 290%;
+  }
+  #answers .answers .answers--desc {
+    align-items: center;
+    justify-content: space-between;
+  }
+  #answers .answers .answers--desc h1 {
+    font-size: 24px;
+  }
+  #answers .answers .answers--desc__img {
+    width: 42px;
+    height: 50px;
+  }
+  #answers .answers .answers--accordion__accordion--title {
+    font-size: 15px;
+    line-height: 23px;
+  }
+  #footer .footer .footer--blogs__blog {
+    width: 37%;
+  }
+  #footer .footer .footer--blogs__blog2 {
+    width: 65%;
+  }
+}
+@media (max-width: 380px) {
+  #hero--inner2 .hero--inner2 .hero--inner2__desc--group__left {
+    width: 100%;
+  }
+  #hero--inner2 .hero--inner2 .hero--inner2__desc--group__right {
+    width: 100%;
+  }
+  #hero .hero .hero--desc {
+    width: 92%;
+  }
+  #hero .hero .hero--desc p {
+    font-size: 14px;
+  }
+  #blogs .blogs .blogs--blog h3 {
+    font-size: 17px;
+  }
+  #blogs .blogs .blogs--blog p {
+    font-size: 14px;
+  }
+  #courses .courses .courses--groups__blog {
+    height: 346px !important;
+  }
+  #courses .courses .courses--groups__blog h2 {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  #courses .courses .courses--groups__blog--team {
+    align-items: start;
+    gap: 18px;
+  }
+  #form .form .form--group__desc p {
+    width: 84%;
+  }
+  #form .form .form--group__form--group {
+    width: 78%;
+  }
+  #answers .answers .answers--desc {
+    align-items: center;
+    justify-content: space-between;
+  }
+  #answers .answers .answers--desc h1 {
+    font-size: 24px;
+  }
+  #answers .answers .answers--desc__img {
+    width: 42px;
+    height: 50px;
+  }
+  #answers .answers .answers--accordion__accordion--title {
+    font-size: 15px;
+    line-height: 23px;
+  }
+  #footer .footer .footer--blogs__blog {
+    width: 35%;
+  }
+  #footer .footer .footer--blogs__blog2 {
+    width: 68%;
+  }
+  #footer .footer .footer--icons {
+    width: 50%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
