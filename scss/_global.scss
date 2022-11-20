@@ -680,6 +680,39 @@ $fontSize-18: 18px;
     }
   }
 }
+// blogs 43 материала * (Наши курсы)
+#blogs {
+  .blogs {
+    @include alignment;
+    padding: 100px 0;
+    &--blog {
+      width: 29%;
+
+      &__square {
+        @include alignment-center;
+        width: 80px;
+        height: 80px;
+        background: #0096C7;
+        border-radius: 10px;
+
+      }
+      h3 {
+        font-weight: 900;
+        font-size: 20px;
+        text-transform: capitalize;
+        color: $lightColor;
+        margin: 20px 0 6px 0;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: $lightColor;
+      }
+    }
+  }
+}
 
 // masterclass
 #masterclass {
