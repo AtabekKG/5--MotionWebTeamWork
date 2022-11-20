@@ -108,6 +108,81 @@
   height: 100%;
 }
 
+#chang .chang {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+  gap: 4rem;
+}
+#chang .chang--alisa {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#chang .chang--oleg {
+  width: 552px;
+  height: 264px;
+  background: #1E2023;
+  border-radius: 15px;
+}
+#chang .chang--oleg__just {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -30px;
+}
+#chang .chang--oleg__read h1 {
+  padding: 20px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+#chang .chang--oleg__read h2 {
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  color: rgba(255, 255, 255, 0.6);
+}
+#chang .chang--oleg__read p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#chang .chang--oleg__read--goul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px 0 0;
+  margin: 0 20px 0;
+}
+#chang .chang--oleg__read--goul .star {
+  width: 13px;
+  height: 12px;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  background: orange;
+}
+#chang .chang--oleg__read--goul .star2 {
+  width: 13px;
+  height: 12px;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  background: #ffffff;
+}
+#chang .chang--oleg__read--goul p {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 10px;
+}
+
 #hero--inner2 .hero--inner2 {
   padding: 120px 0 100px 0;
 }
