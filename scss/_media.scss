@@ -568,6 +568,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
+        z-index: 120;
         transform: translate(-50%, -50%);
 
         &__btn {
@@ -575,6 +576,8 @@
           margin: 25px auto 0 auto;
           background: #0096C7;
           color: #fff;
+          text-align: center;
+          width: 56%;
         }
       }
 
@@ -1302,6 +1305,19 @@
 }
 
 @media (max-width: 400px) {
+  // hero
+  #hero {
+    .hero {
+      .hero--desc {
+        h1 {
+          font-size: 24px;
+        }
+        &__btn {
+          width: 63%;
+        }
+      }
+    }
+  }
   // hero--inner2 (Командообразование)
   #hero--inner2 {
     .hero--inner2 {
@@ -1680,9 +1696,9 @@
   }
   #red {
     .red {
-      .red--nav {
+      .red--navbar {
         h1 {
-          font-size: 26px !important;
+          font-size: 25px !important;
         }
 
         img {
@@ -1735,7 +1751,7 @@
   }
   #red {
     .red {
-      .red--nav {
+      .red--navbar {
         h1 {
           font-size: 24px !important;
         }

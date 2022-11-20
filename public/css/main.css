@@ -2041,6 +2041,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 120;
     transform: translate(-50%, -50%);
   }
   #hero .hero .hero--desc__btn {
@@ -2048,6 +2049,8 @@
     margin: 25px auto 0 auto;
     background: #0096C7;
     color: #fff;
+    text-align: center;
+    width: 56%;
   }
   #hero .hero .hero--bg {
     width: 92%;
@@ -2422,6 +2425,12 @@
   }
 }
 @media (max-width: 400px) {
+  #hero .hero .hero--desc h1 {
+    font-size: 24px;
+  }
+  #hero .hero .hero--desc__btn {
+    width: 63%;
+  }
   #hero--inner2 .hero--inner2 .hero--inner2__desc--group__left {
     width: 84%;
   }
@@ -2589,16 +2598,16 @@
   #signIn .signIn .signIn--nav a {
     margin-left: 121px !important;
   }
-  #red .red .red--nav h1 {
-    font-size: 26px !important;
+  #red .red .red--navbar h1 {
+    font-size: 25px !important;
   }
-  #red .red .red--nav img {
+  #red .red .red--navbar img {
     margin-left: 149px !important;
   }
-  #red .red .red--nav input {
+  #red .red .red--navbar input {
     width: 420px !important;
   }
-  #red .red .red--nav a {
+  #red .red .red--navbar a {
     margin-left: 121px !important;
   }
 }
@@ -2620,20 +2629,20 @@
     font-size: 14px !important;
     margin-left: 100px !important;
   }
-  #red .red .red--nav h1 {
+  #red .red .red--navbar h1 {
     font-size: 24px !important;
   }
-  #red .red .red--nav img {
+  #red .red .red--navbar img {
     margin-left: 110px !important;
   }
-  #red .red .red--nav input {
+  #red .red .red--navbar input {
     width: 320px !important;
   }
-  #red .red .red--nav__horrol--btn button {
+  #red .red .red--navbar__horrol--btn button {
     font-size: 20px !important;
     padding: 9px 72px !important;
   }
-  #red .red .red--nav a {
+  #red .red .red--navbar a {
     font-size: 14px !important;
     margin-left: 100px !important;
   }
