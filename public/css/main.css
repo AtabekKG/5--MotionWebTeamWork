@@ -63,6 +63,51 @@
   transform: translateY(2px);
 }
 
+#hero {
+  padding: 170px 0 20px 0;
+  position: relative;
+}
+#hero .hero {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+}
+#hero .hero--desc {
+  width: 50%;
+}
+#hero .hero--desc p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #9099A3;
+}
+#hero .hero--desc h1 {
+  font-weight: 700;
+  font-size: 48px;
+  color: #FFFFFF;
+}
+#hero .hero--desc__btn {
+  font-weight: 500;
+  font-size: 17px;
+  text-transform: capitalize;
+  color: #1E2024;
+  padding: 8px 30px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  margin-top: 25px;
+  transition: all 0.4s ease-in;
+}
+#hero .hero--desc__btn:hover {
+  transform: scale(0.97);
+}
+#hero .hero--bg {
+  width: 40%;
+}
+#hero .hero--bg img {
+  width: 100%;
+  height: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
