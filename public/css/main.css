@@ -603,6 +603,86 @@
   color: #FFFFFF;
 }
 
+#answers {
+  padding-bottom: 100px;
+}
+#answers .answers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: start;
+}
+#answers .answers--desc {
+  width: 20%;
+}
+#answers .answers--desc h1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+#answers .answers--desc__img {
+  width: 178px;
+  height: 90px;
+}
+#answers .answers--desc__img img {
+  width: 100%;
+  height: 100%;
+}
+#answers .answers--accordion {
+  width: 72%;
+}
+#answers .answers--accordion__accordion {
+  width: 100%;
+  position: relative;
+  padding: 20px 0 10px 0;
+  border-bottom: 0.5px solid #9099A3;
+}
+#answers .answers--accordion__accordion input {
+  display: none;
+}
+#answers .answers--accordion__accordion--title {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+#answers .answers--accordion__accordion--title i {
+  font-size: 22px;
+  position: absolute;
+  right: 14px;
+  top: 25px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#answers .answers--accordion__accordion .title3 {
+  display: block;
+  width: 73%;
+}
+#answers .answers--accordion__accordion--wrap {
+  margin-top: 2px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease-in;
+}
+#answers .answers--accordion__accordion--wrap div {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  padding: 15px 0;
+}
+#answers .answers--accordion__accordion input:checked + .answers--accordion__accordion--title i {
+  transform: rotate(180deg);
+}
+#answers .answers--accordion__accordion input:checked ~ .answers--accordion__accordion--wrap {
+  max-height: 500px;
+}
+
 * {
   margin: 0;
   padding: 0;
