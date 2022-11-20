@@ -7,54 +7,67 @@
   height: 230px;
 }
 
-//mixin
-@mixin d-f_jc-end_al-start {
-  display: flex;
-  justify-content: end;
-  align-items: start;
-}
+// variables
+$lightColor: #FFFFFF;
+$darkColor: #1E2024;
+$bgdBtn: #0096C7;
+$width-100: 100%;
+$fontSize-14: 14px;
+$fontSize-18: 18px;
+$fontSize-16: 16px;
+$fontSize-20: 20px;
 
+// mixin
+// Alignment
+@mixin alignment {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
-@mixin title {
-  font-weight: 700;
-  font-size: 48px;
-  color: $lightColor;
-}
-
+// Alignment center
 @mixin alignment-center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-@mixin alignment {
-  align-items: center;
+@mixin d-f_jc-end_al-start {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+}
+
+@mixin d-f_js-sb {
+  display: flex;
   justify-content: space-between;
 }
 
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-//variables
+// border and outline NONE
 @mixin b-and-o__none {
   border: none;
   outline: none;
 }
 
-$lightColor: #FFFFFF;
-$darkColor: #1E2024;
-$width-100: 100%;
-$fontSize-14: 14px;
-$bgdBtn: #0096C7;
-$fontSize-16: 16px;
-$fontSize-20: 20px;
-$fontSize-18: 18px;
+// Sections title
+@mixin title {
+  font-weight: 700;
+  font-size: 48px;
+  color: $lightColor;
+}
 
+// position fixed top left 0
+@mixin p-f_t-0_left-0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@mixin p-f_t-0_right-0 {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
 
 // header
 #header {
@@ -131,7 +144,6 @@ $fontSize-18: 18px;
 
   .hero {
     @include d-f_jc-end_al-start;
-
     &--desc {
       width: 50%;
 
@@ -169,324 +181,6 @@ $fontSize-18: 18px;
       img {
         width: 100%;
         height: 100%;
-      }
-    }
-  }
-}
-
-// change (education)
-#chang {
-
-  .chang {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 40px 0;
-    gap: 4rem;
-
-    &--alisa {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    &--oleg {
-      width: 552px;
-      height: 264px;
-      background: #1E2023;
-      border-radius: 15px;
-
-      &__just {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: -30px;
-      }
-
-      &__read {
-        h1 {
-          padding: 20px 0;
-          text-align: center;
-          font-weight: 700;
-          font-size: 14px;
-          line-height: 21px;
-          color: #FFFFFF;
-        }
-
-        h2 {
-
-          text-align: center;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 10px;
-          line-height: 15px;
-          color: rgba(255, 255, 255, 0.6);
-        }
-
-        p {
-          font-weight: 400;
-          font-size: 12px;
-          line-height: 18px;
-          text-align: center;
-          color: #FFFFFF;
-        }
-
-        &--goul {
-          display: flex;
-          align-items: center;
-          justify-content: flex-end;
-          padding: 20px 0 0;
-          margin: 0 20px 0;
-
-          .star {
-            width: 13px;
-            height: 12px;
-            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-            background: orange;
-          }
-
-          .star2 {
-            width: 13px;
-            height: 12px;
-            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-            background: #ffffff;
-          }
-
-          p {
-            font-weight: 400;
-            font-size: 10px;
-            line-height: 15px;
-            color: rgba(255, 255, 255, 0.6);
-            margin: 0 10px;
-          }
-
-        }
-
-
-      }
-
-
-    }
-
-  }
-}
-
-// hero--inner2 Командообразование  (Смотреть программу)
-#hero--inner2 {
-  .hero--inner2 {
-    padding: 120px 0 100px 0;
-
-    &__desc {
-      span {
-        font-weight: 400;
-        font-size: 12px;
-        color: $lightColor;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-
-      &--group {
-        display: flex;
-        align-items: start;
-        column-gap: 140px;
-        margin: 20px 0 30px 0;
-
-        &__left {
-          width: 36%;
-
-          h1 {
-            font-weight: 700;
-            font-size: 36px;
-            color: $lightColor;
-            margin-bottom: 10px;
-          }
-          p {
-            font-weight: 400;
-            font-size: $fontSize-16;
-            line-height: 24px;
-            color: $lightColor;
-          }
-        }
-
-        &__right {
-          width: 30%;
-          display: flex;
-          flex-direction: column;
-          row-gap: 10px;
-          padding-top: 15px;
-
-            align-items: end;
-
-            h3 {
-              font-weight: 400;
-              font-size: $fontSize-20;
-              color: $lightColor;
-            }
-
-            span {
-              font-weight: 400;
-              font-size: $fontSize-14;
-              color: $lightColor;
-            }
-          }
-          &--progress {
-            width: 100%;
-            height: 4px;
-            border-radius: 15px;
-              height: 100%;
-              background-color: green;
-              border-radius: 15px;
-            }
-          }
-
-          &--btmGroup {
-            @include d-f_js-sb;
-
-            &__left {
-              div {
-                display: flex;
-                align-items: center;
-                column-gap: 6px;
-
-                span {
-                }
-
-                  font-weight: 400;
-                  font-size: $fontSize-14;
-                  color: #9099A3;
-                }
-              }
-
-              p {
-                font-weight: 400;
-                font-size: $fontSize-20;
-                line-height: 30px;
-                color: $lightColor;
-              }
-            }
-
-          }
-        }
-      }
-    }
-  }
-}
-
-// course--program2 (Смотреть программу)
-#course--program2 {
-  .course--program2 {
-    padding-bottom: 100px;
-
-    &__title {
-      @include title;
-      font-size: 36px;
-      margin-bottom: 20px;
-
-    }
-
-    &__blog {
-      width: 80%;
-      display: flex;
-      flex-direction: column;
-      row-gap: 20px;
-
-      &--accordion {
-        width: 100%;
-        position: relative;
-        padding: 20px 0 10px 10px;
-        border: 1px solid #9099A3;
-        border-radius: 15px;
-
-
-        &__btn {
-          font-weight: 700;
-          font-size: 18px;
-          text-transform: capitalize;
-          color: $lightColor;
-          padding: 7px 20px;
-          background: #0096C7;
-          border-radius: 15px;
-          transition: all .4s ease-in;
-
-          &:hover {
-            transform: translateY(2px);
-          }
-        }
-        &__title {
-          font-weight: 700;
-          font-size: 16px;
-          line-height: 24px;
-          text-transform: capitalize;
-          color: $lightColor;
-          margin-left: 44px;
-
-          i {
-            font-size: 22px;
-            position: absolute;
-            right: 14px;
-            top: 25px;
-            -webkit-transition: all 0.3s ease;
-            -moz-transition: all 0.3s ease;
-            -o-transition: all 0.3s ease;
-            transition: all 0.3s ease;
-          }
-        }
-
-        input {
-          display: none;
-        }
-
-        input {
-          display: none;
-        }
-        &__wrap {
-          margin-top: 2px;
-          max-height: 0;
-          overflow: hidden;
-          display: flex;
-          justify-content: end;
-          transition: max-height 0.6s ease-in;
-
-          ul {
-            padding: 25px 0;
-            display: flex;
-            flex-direction: column;
-            row-gap: 10px;
-
-            li {
-              display: flex;
-              align-items: start;
-              column-gap: 20px;
-
-              p {
-                width: 65%;
-                font-weight: 400;
-                font-size: 20px;
-                line-height: 30px;
-                text-transform: capitalize;
-                color: $lightColor;
-
-                span {
-                  font-weight: 400;
-                  font-size: 14px;
-                  text-transform: capitalize;
-                  color: #9099A3;
-                }
-              }
-            }
-          }
-        }
-
-        input:checked + .course--program2__blog--accordion__title i {
-          transform: rotate(180deg);
-        }
-
-        }
-        input:checked ~ .course--program2__blog--accordion__wrap {
-          max-height: 1000px;
-        }
       }
     }
   }
@@ -582,231 +276,107 @@ $fontSize-18: 18px;
   }
 }
 
-// courses
-#courses {
-  padding-bottom: 100px;
+// hero--inner2 Командообразование  (Смотреть программу)
+#hero--inner2 {
+  .hero--inner2 {
+    padding: 120px 0 100px 0;
 
-  .courses {
-    &--group {
-      display: flex;
-      align-items: center;
-      gap: 40px;
-
-      &__title {
-        @include title;
-        font-size: 36px;
-      }
-
-      &__group {
+    &__desc {
+      span {
+        font-weight: 400;
+        font-size: 12px;
+        color: $lightColor;
         display: flex;
-        gap: 20px;
-
-        &--blog {
-          @include alignment-center;
-          width: 44px;
-          height: 44px;
-          background: #FFFFFF;
-          border-radius: 15px;
-        }
+        align-items: center;
+        gap: 10px;
       }
-    }
+      &--group {
+        display: flex;
+        align-items: start;
+        column-gap: 140px;
+        margin: 20px 0 30px 0;
 
-    &--blogs {
-      @include alignment;
-      margin-top: 25px;
+        &__left {
+          width: 36%;
 
-      .swiper {
-        width: 100%;
-
-        &-wrapper {
-          display: flex;
-          gap: 208px;
-
-          .swiper-slide {
-            height: 300px;
-          }
-        }
-      }
-
-      &__blog {
-        width: 142%;
-        height: 300px;
-        padding: 20px 60px 30px 20px;
-        background: $lightColor;
-        border-radius: 15px;
-        position: relative;
-
-        &--nav {
-          display: flex;
-          align-items: center;
-          gap: 15px;
-
-          a {
-            font-weight: 400;
-            font-size: 12px;
-            color: #9099A3;
-            transition: all .4s ease-in;
-
-            &:hover {
-              transform: translateY(1.2px);
-            }
-          }
-        }
-
-        &--desc {
-          margin: 22px 0 75px 0;
-
-          h2 {
+          h1 {
             font-weight: 700;
-            font-size: 20px;
-            color: #2C3E50;
+            font-size: 36px;
+            color: $lightColor;
+            margin-bottom: 10px;
           }
-
           p {
-            width: 276px;
             font-weight: 400;
-            font-size: 16px;
+            font-size: $fontSize-16;
             line-height: 24px;
-            color: #2C3E50;
+            color: $lightColor;
           }
         }
-
-        &--group {
-          @include alignment;
-          width: 110px;
-          padding-bottom: 2px;
-          border-bottom: 1px solid #000000;
-
-          a {
-            font-weight: 600;
-            font-size: 16px;
-            text-transform: capitalize;
-            color: $darkColor;
-          }
-        }
-
-        &--img {
-          position: absolute;
-          right: 40px;
-          bottom: 0;
-          width: 200px;
-          height: 280px;
-
-          img {
-            width: 100%;
-            height: 100%;
-          }
-        }
-      }
-    }
-
-    &--groups {
-    }
-
-    &--groups {
-      display: flex;
-      flex-wrap: wrap;
-      column-gap: 40px;
-      row-gap: 60px;
-      margin-top: 74px;
-
-      &__blog {
-        width: 48%;
-        height: 300px;
-        background: $lightColor;
-        border-radius: 15px;
-        padding: 24px 30px;
-        display: flex;
-        flex-direction: column;
-        row-gap: 18px;
-        position: relative;
-        overflow: hidden;
-
-        &--group {
+        &__right {
+          width: 30%;
           display: flex;
-          align-items: center;
-          gap: 12px;
-          font-weight: 400;
-          font-size: 12px;
-          color: #9099A3;
-        }
+          flex-direction: column;
+          row-gap: 10px;
+          padding-top: 15px;
 
-        h2 {
-          font-weight: 700;
-          font-size: 20px;
-          line-height: 30px;
-          color: #2C3E50;
-        }
+          &--topGroup {
+            @include alignment;
+            align-items: end;
 
-        p {
-          font-size: 16px;
-          color: #9099A3;
-        }
-
-        &--date {
-          display: flex;
-          gap: 20px;
-          padding-bottom: 10px;
-          border-bottom: 0.5px solid #9099A3;
-
-          span {
-            font-weight: 400;
-            font-size: 14px;
-            color: #9099A3;
-          }
-        }
-
-        &--team {
-          display: flex;
-          align-items: center;
-          gap: 10px;
-
-          p {
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 21px;
-            color: #9099A3;
-
+            h3 {
+              font-weight: 400;
+              font-size: $fontSize-20;
+              color: $lightColor;
+            }
             span {
-              font-weight: 700;
-              font-size: 16px;
-              color: #2C3E50;
+              font-weight: 400;
+              font-size: $fontSize-14;
+              color: $lightColor;
             }
           }
-        }
+          &--progress {
+            width: 100%;
+            height: 4px;
+            border-radius: 15px;
+            background-color: #9099A3;
 
-        &--blogNew {
-          @include alignment-center;
-          width: 70px;
-          height: 30px;
-          background: #FF091E;
-          border-radius: 0px 15px;
-          position: absolute;
-          top: 0;
-          right: 0;
+            div {
+              width: 40%;
+              height: 100%;
+              background-color: green;
+              border-radius: 15px;
+            }
+          }
+          &--btmGroup {
+            @include d-f_js-sb;
 
-          span {
-            font-weight: 700;
-            font-size: 14px;
-            color: #FFFFFF;
+            &__left {
+              div {
+                display: flex;
+                align-items: center;
+                column-gap: 6px;
+
+                span{
+                  font-weight: 400;
+                  font-size: 36px;
+                  color: $lightColor;
+                }
+                p {
+                  font-weight: 400;
+                  font-size: $fontSize-14;
+                  color: #9099A3;
+                }
+              }
+              p {
+                font-weight: 400;
+                font-size: $fontSize-20;
+                line-height: 30px;
+                color: $lightColor;
+              }
+            }
+
           }
         }
-      }
-    }
-
-    &--btn {
-      font-weight: 700;
-      font-size: 20px;
-      color: $lightColor;
-      padding: 15px 58px;
-      background: #0096C7;
-      border-radius: 15px;
-      display: block;
-      margin: 30px auto 0 auto;
-      transition: all .4s ease-in;
-
-      &:hover {
-        transform: scale(.97);
       }
     }
   }
@@ -1054,6 +624,126 @@ $fontSize-18: 18px;
   }
 }
 
+// course--program2 (Смотреть программу)
+#course--program2 {
+  .course--program2 {
+    padding-bottom: 100px;
+
+    &__title {
+      @include title;
+      font-size: 36px;
+      margin-bottom: 20px;
+
+    }
+
+    &__blog {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+
+      &--accordion {
+        width: 100%;
+        position: relative;
+        padding: 20px 0 10px 10px;
+        border: 1px solid #9099A3;
+        border-radius: 15px;
+
+
+        &__btn {
+          font-weight: 700;
+          font-size: 18px;
+          text-transform: capitalize;
+          color: $lightColor;
+          padding: 7px 20px;
+          background: #0096C7;
+          border-radius: 15px;
+          transition: all .4s ease-in;
+
+          &:hover {
+            transform: translateY(2px);
+          }
+        }
+
+        &__title {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+          text-transform: capitalize;
+          color: $lightColor;
+          margin-left: 44px;
+
+          i {
+            font-size: 22px;
+            position: absolute;
+            right: 14px;
+            top: 25px;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+          }
+        }
+
+        input {
+          display: none;
+        }
+
+        input {
+          display: none;
+        }
+
+        &__wrap {
+          margin-top: 2px;
+          max-height: 0;
+          overflow: hidden;
+          display: flex;
+          justify-content: end;
+          transition: max-height 0.6s ease-in;
+
+          ul {
+            padding: 25px 0;
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+
+            li {
+              display: flex;
+              align-items: start;
+              column-gap: 20px;
+
+              p {
+                width: 65%;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 30px;
+                text-transform: capitalize;
+                color: $lightColor;
+
+                span {
+                  font-weight: 400;
+                  font-size: 14px;
+                  text-transform: capitalize;
+                  color: #9099A3;
+                }
+              }
+            }
+          }
+        }
+
+        input:checked + .course--program2__blog--accordion__title i {
+          transform: rotate(180deg);
+        }
+
+      }
+
+      input:checked ~ .course--program2__blog--accordion__wrap {
+        max-height: 1000px;
+      }
+    }
+  }
+}
+
 // blogs 43 материала * (Наши курсы)
 #blogs {
   .blogs {
@@ -1095,7 +785,7 @@ $fontSize-18: 18px;
 //НАУЧИТЕСЬ (Наши курсы)
 #group {
   .group {
-    @include alignment;
+    @include  alignment;
     align-items: start;
     padding-bottom: 100px;
 
@@ -1107,7 +797,6 @@ $fontSize-18: 18px;
       text-transform: capitalize;
       color: $lightColor
     }
-
     &--desc {
       width: 45%;
       display: flex;
@@ -1119,21 +808,10 @@ $fontSize-18: 18px;
         align-items: start;
         column-gap: 20px;
 
-          display: flex;
-          align-items: center;
-          gap: 12px;
-          font-weight: 400;
-          font-size: 12px;
-          color: #9099A3;
-        }
-
-        h2 {
-          font-weight: 700;
         i {
           color: #0096C7;
           font-size: 20px;
         }
-
         p {
           font-weight: 400;
           font-size: 16px;
@@ -1141,24 +819,6 @@ $fontSize-18: 18px;
           text-transform: capitalize;
           color: $lightColor;
         }
-
-        &--date {
-          display: flex;
-          gap: 20px;
-          padding-bottom: 10px;
-          border-bottom: 0.5px solid #9099A3;
-
-          span {
-            font-weight: 400;
-            font-size: 14px;
-            color: #9099A3;
-          }
-        }
-
-        &--team {
-          display: flex;
-          align-items: center;
-          gap: 10px;
       }
     }
   }
@@ -1183,38 +843,18 @@ $fontSize-18: 18px;
       text-transform: capitalize;
       color: #9099A3;
     }
-
     h1 {
-            span {
-              font-weight: 700;
-              font-size: 16px;
-              color: #2C3E50;
-            }
-          }
-        }
-
-        &--blogNew {
-          @include alignment-center;
-          width: 70px;
-          height: 30px;
-          background: #FF091E;
-          border-radius: 0px 15px;
-          position: absolute;
-          top: 0;
-          right: 0;
       font-weight: 900;
       font-size: 36px;
       text-transform: capitalize;
       color: #2C3E50;
     }
-
     p {
       font-weight: 500;
       font-size: 16px;
       text-transform: capitalize;
       color: #2C3E50;
     }
-
     &--desc {
       width: 40%;
       display: flex;
@@ -1229,10 +869,6 @@ $fontSize-18: 18px;
         color: #2C3E50;
       }
     }
-
-    &--btn {
-      font-weight: 700;
-      font-size: 20px;
     &--bg {
       position: absolute;
       bottom: 0;
@@ -1291,6 +927,236 @@ $fontSize-18: 18px;
           text-transform: capitalize;
           color: $lightColor;
         }
+      }
+    }
+  }
+}
+
+// courses
+#courses {
+  padding-bottom: 100px;
+
+  .courses {
+    &--group {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+
+      &__title {
+        @include title;
+        font-size: 36px;
+      }
+
+      &__group {
+        display: flex;
+        gap: 20px;
+
+        &--blog {
+          @include alignment-center;
+          width: 44px;
+          height: 44px;
+          background: #FFFFFF;
+          border-radius: 15px;
+        }
+      }
+    }
+
+    &--blogs {
+      @include alignment;
+      margin-top: 25px;
+
+      .swiper {
+        width: 100%;
+
+        &-wrapper {
+          display: flex;
+          gap: 208px;
+
+          .swiper-slide {
+            height: 300px;
+          }
+        }
+      }
+
+      &__blog {
+        width: 142%;
+        height: 300px;
+        padding: 20px 60px 30px 20px;
+        background: $lightColor;
+        border-radius: 15px;
+        position: relative;
+
+        &--nav {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+
+          a {
+            font-weight: 400;
+            font-size: 12px;
+            color: #9099A3;
+            transition: all .4s ease-in;
+
+            &:hover {
+              transform: translateY(1.2px);
+            }
+          }
+        }
+
+        &--desc {
+          margin: 22px 0 75px 0;
+
+          h2 {
+            font-weight: 700;
+            font-size: 20px;
+            color: #2C3E50;
+          }
+
+          p {
+            width: 276px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #2C3E50;
+          }
+        }
+
+        &--group {
+          @include alignment;
+          width: 110px;
+          padding-bottom: 2px;
+          border-bottom: 1px solid #000000;
+
+          a {
+            font-weight: 600;
+            font-size: 16px;
+            text-transform: capitalize;
+            color: $darkColor;
+          }
+        }
+
+        &--img {
+          position: absolute;
+          right: 40px;
+          bottom: 0;
+          width: 200px;
+          height: 280px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    &--groups {
+    }
+
+    &--groups {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 40px;
+      row-gap: 60px;
+      margin-top: 74px;
+
+      &__blog {
+        width: 48%;
+        height: 300px;
+        background: $lightColor;
+        border-radius: 15px;
+        padding: 24px 30px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 18px;
+        position: relative;
+        overflow: hidden;
+
+        &--group {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          font-weight: 400;
+          font-size: 12px;
+          color: #9099A3;
+        }
+
+        h2 {
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 30px;
+          color: #2C3E50;
+        }
+
+        p {
+          font-size: 16px;
+          color: #9099A3;
+        }
+
+        &--date {
+          display: flex;
+          gap: 20px;
+          padding-bottom: 10px;
+          border-bottom: 0.5px solid #9099A3;
+
+          span {
+            font-weight: 400;
+            font-size: 14px;
+            color: #9099A3;
+          }
+        }
+
+        &--team {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #9099A3;
+
+            span {
+              font-weight: 700;
+              font-size: 16px;
+              color: #2C3E50;
+            }
+          }
+        }
+
+        &--blogNew {
+          @include alignment-center;
+          width: 70px;
+          height: 30px;
+          background: #FF091E;
+          border-radius: 0px 15px;
+          position: absolute;
+          top: 0;
+          right: 0;
+
+          span {
+            font-weight: 700;
+            font-size: 14px;
+            color: #FFFFFF;
+          }
+        }
+      }
+    }
+
+    &--btn {
+      font-weight: 700;
+      font-size: 20px;
+      color: $lightColor;
+      padding: 15px 58px;
+      background: #0096C7;
+      border-radius: 15px;
+      display: block;
+      margin: 30px auto 0 auto;
+      transition: all .4s ease-in;
+
+      &:hover {
+        transform: scale(.97);
       }
     }
   }
@@ -1420,7 +1286,6 @@ $fontSize-18: 18px;
 // form
 #form {
   padding-bottom: 110px;
-
   .form {
     &--blog {
       @include alignment;
@@ -1482,7 +1347,6 @@ $fontSize-18: 18px;
         }
       }
     }
-
     &--group {
       @include alignment;
       align-items: start;
@@ -1860,6 +1724,104 @@ $fontSize-18: 18px;
   }
 }
 
+// change (education)
+#chang {
+
+  .chang {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    gap: 4rem;
+
+    &--alisa {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &--oleg {
+      width: 552px;
+      height: 264px;
+      background: #1E2023;
+      border-radius: 15px;
+
+      &__just {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -30px;
+      }
+
+      &__read {
+        h1 {
+          padding: 20px 0;
+          text-align: center;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 21px;
+          color: #FFFFFF;
+        }
+
+        h2 {
+
+          text-align: center;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 15px;
+          color: rgba(255, 255, 255, 0.6);
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 18px;
+          text-align: center;
+          color: #FFFFFF;
+        }
+
+        &--goul {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          padding: 20px 0 0;
+          margin: 0 20px 0;
+
+          .star {
+            width: 13px;
+            height: 12px;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            background: orange;
+          }
+
+          .star2 {
+            width: 13px;
+            height: 12px;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            background: #ffffff;
+          }
+
+          p {
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 15px;
+            color: rgba(255, 255, 255, 0.6);
+            margin: 0 10px;
+          }
+
+        }
+
+
+      }
+
+
+    }
+
+  }
+}
+
 // sign-in
 #signIn {
   .signIn {
@@ -1869,10 +1831,14 @@ $fontSize-18: 18px;
     justify-content: center;
 
     &--nav {
-      img {
-        width: 100px;
-        height: 100px;
+      .link {
+        display: block;
         margin-left: 200px;
+        img {
+          display: block;
+          width: 100px;
+          height: 100px;
+        }
       }
 
       h1 {
@@ -1954,19 +1920,20 @@ $fontSize-18: 18px;
 }
 
 //resset pasword
-#red{
-  .red{
+#red {
+  .red {
     padding: 100px 0;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    &--navbar{
-      img{
+    &--navbar {
+      img {
         margin-left: 190px;
       }
-      h1{
-        font-family: 'Poppins',sans-serif;
+
+      h1 {
+        font-family: 'Poppins', sans-serif;
         font-style: normal;
         font-size: 36px;
         line-height: 54px;
@@ -1974,7 +1941,8 @@ $fontSize-18: 18px;
         color: #FFFFFF;
         padding: 30px 0;
       }
-      input{
+
+      input {
         background: #FFFFFF;
         border-radius: 15px;
         width: 495px;
@@ -1982,8 +1950,9 @@ $fontSize-18: 18px;
         padding-left: 20px;
         box-shadow: 10px 10px 18px rgba(0, 0, 0, 0.26), -10px -10px 24px rgba(0, 0, 0, 0.26);
       }
-      &__horrol{
-        input{
+
+      &__horrol {
+        input {
           margin: 20px 0;
           background: #FFFFFF;
           border-radius: 15px;
@@ -1991,19 +1960,19 @@ $fontSize-18: 18px;
           height: 63px;
           padding-left: 20px;
           box-shadow: 10px 10px 18px rgba(0, 0, 0, 0.26), -10px -10px 24px rgba(0, 0, 0, 0.26);
-          input::placeholder{
+
+          input::placeholder {
             color: #1a1a2f;
           }
 
         }
 
 
-
-
-        &--btn{
+        &--btn {
           padding: 30px 0;
           text-align: center;
-          button{
+
+          button {
             box-shadow: 10px 10px 18px rgba(255, 255, 255, 0.15), -10px -10px 24px rgba(255, 255, 255, 0.13);
             background: linear-gradient(180deg, rgba(13,17,68,0.53) -21.43%, rgba(255, 255, 255, 0.51) 123.66%);
             color: #FFFFFF;
@@ -2013,7 +1982,8 @@ $fontSize-18: 18px;
             font-size: 24px;
             line-height: 36px;
             border-radius: 15px;
-            &:hover{
+
+            &:hover {
               transform: scale(1.1);
               border: 1px solid black;
               background: rgba(26, 92, 255, 0.87);
@@ -2023,6 +1993,7 @@ $fontSize-18: 18px;
         }
 
       }
+
       a {
         margin-left: 154px;
         text-align: center;
@@ -2046,64 +2017,6 @@ $fontSize-18: 18px;
   display: none;
 }
 
-#header {
-  .header {
-    @include p-f_t-0_left-0;
-    z-index: 99;
-    width: $width-100;
-    padding: 24px 30px;
-    background-color: rgba(140, 179, 217, 0.2);
-    border-bottom: 2px solid $lightColor;
-    backdrop-filter: blur(50px);
-    @include alignment;
 
-    &--nav {
-      display: flex;
-      gap: 50px;
 
-      &__item {
-        font-weight: 500;
-        font-size: $fontSize-14;
-        color: $lightColor;
-        transition: all .4s ease-in;
 
-        &:hover {
-          color: #c6d8eb;
-          transform: translateY(2px);
-        }
-      }
-    }
-
-    &--group {
-      display: flex;
-      gap: 35px;
-
-      select {
-        @include b-and-o__none;
-        background-color: transparent;
-        font-weight: 400;
-        font-size: 15px;
-        color: $lightColor;
-
-        option {
-          background-color: $darkColor;
-        }
-      }
-
-      a {
-        display: block;
-        font-weight: 500;
-        font-size: 18px;
-        color: $lightColor;
-        padding: 6px 22px;
-        background: $bgdBtn;
-        border-radius: 10px;
-        transition: all .4s ease-in;
-
-        &:hover {
-          transform: translateY(2px);
-        }
-      }
-    }
-  }
-}
