@@ -201,6 +201,103 @@
   color: #FFFFFF;
 }
 
+#course--program2 .course--program2 {
+  padding-bottom: 100px;
+}
+#course--program2 .course--program2__title {
+  font-weight: 700;
+  font-size: 48px;
+  color: #FFFFFF;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+#course--program2 .course--program2__blog {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+#course--program2 .course--program2__blog--accordion {
+  width: 100%;
+  position: relative;
+  padding: 20px 0 10px 10px;
+  border: 1px solid #9099A3;
+  border-radius: 15px;
+}
+#course--program2 .course--program2__blog--accordion__btn {
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  padding: 7px 20px;
+  background: #0096C7;
+  border-radius: 15px;
+  transition: all 0.4s ease-in;
+}
+#course--program2 .course--program2__blog--accordion__btn:hover {
+  transform: translateY(2px);
+}
+#course--program2 .course--program2__blog--accordion__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-left: 44px;
+}
+#course--program2 .course--program2__blog--accordion__title i {
+  font-size: 22px;
+  position: absolute;
+  right: 14px;
+  top: 25px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#course--program2 .course--program2__blog--accordion input {
+  display: none;
+}
+#course--program2 .course--program2__blog--accordion__wrap {
+  margin-top: 2px;
+  max-height: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: end;
+  transition: max-height 0.6s ease-in;
+}
+#course--program2 .course--program2__blog--accordion__wrap ul {
+  padding: 25px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+#course--program2 .course--program2__blog--accordion__wrap ul li {
+  display: flex;
+  align-items: start;
+  column-gap: 20px;
+}
+#course--program2 .course--program2__blog--accordion__wrap ul li p {
+  width: 65%;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+#course--program2 .course--program2__blog--accordion__wrap ul li p span {
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #9099A3;
+}
+#course--program2 .course--program2__blog--accordion input:checked + .course--program2__blog--accordion__title i {
+  transform: rotate(180deg);
+}
+#course--program2 .course--program2__blog--accordion input:checked ~ .course--program2__blog--accordion__wrap {
+  max-height: 1000px;
+}
+
 #hero--inner .hero--inner {
   padding: 120px 0 100px 0;
 }
