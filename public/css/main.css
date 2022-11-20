@@ -1,3 +1,9 @@
+/* Error: expected "}".
+ *     ,
+ * 339 |       }
+ *     |        ^
+ *     '
+ *   _media.scss 339:8  @import
  *   main.scss 2:9      root stylesheet */
 
 body::before {

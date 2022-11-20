@@ -714,4 +714,209 @@
 
 
 }
+@media (max-width: 576px) {
+  // hero
+  #hero {
+    .hero {
+      .hero--desc {
+        width: 85%;
+        top: 60%;
+        left: 53%;
+      }
+    }
+  }
+
+  // hero--inner2 (Командообразование)
+  #hero--inner2 {
+    .hero--inner2 {
+      .hero--inner2__desc {
+        &--group {
+          &__left {
+            width: 73%;
+          }
+
+          &__right {
+            width: 73%;
+          }
+        }
+      }
+    }
+  }
+
+  // hero--inner (Наши курсы)
+  #hero--inner {
+    .hero--inner {
+      padding-bottom: 40px !important;
+
+      .hero--inner__bg {
+        iframe {
+          height: 320px;
+        }
+      }
+    }
+  }
+
+  // about--course (Наши курсы)
+  #about--course {
+    .about--course {
+      .about--course__btns {
+        flex-direction: column;
+        align-items: start;
+
+        a {
+          font-size: 15px;
+          padding: 4px 15px;
+        }
+      }
+    }
+  }
+
+  // blogs (Наши курсы)
+  #blogs {
+    .blogs {
+      .blogs--blog {
+        width: 70%;
+      }
+    }
+  }
+
+  // group (Наши курсы)
+  #group {
+    .group {
+      justify-content: start !important;
+
+      .group--title {
+        text-align: start;
+      }
+
+      .group--desc {
+        width: 80%;
+      }
+    }
+  }
+
+  // margulan (Наши курсы)
+  #margulan {
+    .margulan {
+      width: 100% !important;
+      height: 615px !important;
+    }
+  }
+
+  // coach (Наши курсы)
+  #coach {
+    .coach {
+      .coach--title {
+        width: 90%;
+        font-size: 25px;
+        line-height: 40px;
+      }
+    }
+  }
+
+  // answers (Наши курсы)
+  #answers {
+    .answers {
+      .answers--desc {
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+          font-size: 28px;
+        }
+
+        &__img {
+          width: 60px;
+        }
+      }
+    }
+  }
+
+  // courses
+  #courses {
+    .courses--blogs {
+
+      .swiper {
+        &-wrapper {
+          gap: 360px !important;
+
+        }
+      }
+
+      &__blog {
+        width: 298% !important;
+      }
+
+
+    }
+
+    .courses--groups {
+      &__blog {
+        width: 100% !important;
+        height: 310px !important;
+      }
+    }
+  }
+
+  // masterclass
+  #masterclass {
+    .masterclass {
+      width: 100%;
+
+      .masterclass--blogs {
+        &__blog {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // form
+  #form {
+    .form {
+      .form--blog {
+        width: 100%;
+        padding: 15px 0;
+      }
+    }
+  }
+
+  // reviews
+  #reviews {
+    .reviews {
+
+      .swiper {
+        .swiper-wrapper {
+          gap: 210px;
+        }
+      }
+
+      .reviews--blog {
+        width: 198%;
+      }
+    }
+  }
+
+  // footer
+  #footer {
+    .footer {
+
+      .footer--blogs {
+        flex-direction: column;
+        row-gap: 22px;
+
+        &__blog2 {
+          width: 45%;
+        }
+      }
+
+      .footer--bottom {
+        margin-top: 18px;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 12px;
+      }
+    }
+  }
+
 }
