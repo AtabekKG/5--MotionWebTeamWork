@@ -2,6 +2,7 @@
 .swiper {
   width: 100%;
 }
+
 .swiper-slide {
   height: 230px;
 }
@@ -12,22 +13,24 @@
   justify-content: end;
   align-items: start;
 }
+
 @mixin title {
   font-weight: 700;
   font-size: 48px;
   color: $lightColor;
 }
+
 @mixin alignment-center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 @mixin alignment {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 
 
 //variables
@@ -67,6 +70,7 @@ $width-100: 100%;
         }
       }
     }
+
     &--group {
       display: flex;
       gap: 35px;
@@ -77,12 +81,13 @@ $width-100: 100%;
         background-color: transparent;
         font-weight: 400;
         font-size: 15px;
-        color:#FFFFFF;
+        color: #FFFFFF;
 
         option {
           background-color: #000;
         }
       }
+
       a {
         display: block;
         font-weight: 500;
@@ -92,6 +97,7 @@ $width-100: 100%;
         background: #0096C7;
         border-radius: 10px;
         transition: all .4s ease-in;
+
         &:hover {
           transform: translateY(2px);
         }
@@ -117,9 +123,11 @@ $width-100: 100%;
         line-height: 36px;
         color: #9099A3;
       }
+
       h1 {
         @include title;
       }
+
       &__btn {
         font-weight: 500;
         font-size: 17px;
@@ -136,6 +144,7 @@ $width-100: 100%;
         }
       }
     }
+
     &--bg {
       width: 40%;
 
@@ -161,6 +170,7 @@ $width-100: 100%;
         @include title;
         font-size: 36px;
       }
+
       &__group {
         display: flex;
         gap: 20px;
@@ -174,6 +184,7 @@ $width-100: 100%;
         }
       }
     }
+
     &--blogs {
       @include alignment;
       margin-top: 25px;
@@ -190,6 +201,7 @@ $width-100: 100%;
           }
         }
       }
+
       &__blog {
         width: 142%;
         height: 300px;
@@ -202,6 +214,7 @@ $width-100: 100%;
           display: flex;
           align-items: center;
           gap: 15px;
+
           a {
             font-weight: 400;
             font-size: 12px;
@@ -213,6 +226,7 @@ $width-100: 100%;
             }
           }
         }
+
         &--desc {
           margin: 22px 0 75px 0;
 
@@ -221,6 +235,7 @@ $width-100: 100%;
             font-size: 20px;
             color: #2C3E50;
           }
+
           p {
             width: 276px;
             font-weight: 400;
@@ -229,11 +244,13 @@ $width-100: 100%;
             color: #2C3E50;
           }
         }
+
         &--group {
           @include alignment;
           width: 110px;
           padding-bottom: 2px;
           border-bottom: 1px solid #000000;
+
           a {
             font-weight: 600;
             font-size: 16px;
@@ -241,6 +258,7 @@ $width-100: 100%;
             color: $darkColor;
           }
         }
+
         &--img {
           position: absolute;
           right: 40px;
@@ -248,13 +266,14 @@ $width-100: 100%;
           width: 200px;
           height: 280px;
 
-          img{
+          img {
             width: 100%;
             height: 100%;
           }
         }
       }
     }
+
     &--groups {
       display: flex;
       flex-wrap: wrap;
@@ -282,16 +301,19 @@ $width-100: 100%;
           font-size: 12px;
           color: #9099A3;
         }
+
         h2 {
           font-weight: 700;
           font-size: 20px;
           line-height: 30px;
           color: #2C3E50;
         }
+
         p {
           font-size: 16px;
           color: #9099A3;
         }
+
         &--date {
           display: flex;
           gap: 20px;
@@ -304,6 +326,7 @@ $width-100: 100%;
             color: #9099A3;
           }
         }
+
         &--team {
           display: flex;
           align-items: center;
@@ -322,6 +345,7 @@ $width-100: 100%;
             }
           }
         }
+
         &--blogNew {
           @include alignment-center;
           width: 70px;
@@ -340,6 +364,7 @@ $width-100: 100%;
         }
       }
     }
+
     &--btn {
       font-weight: 700;
       font-size: 20px;
@@ -367,6 +392,7 @@ $width-100: 100%;
       @include title;
       font-size: 36px;
     }
+
     &--group {
       display: flex;
       gap: 20px;
@@ -383,15 +409,18 @@ $width-100: 100%;
           transform: translateY(2px);
         }
       }
+
       &__f--btn {
         background: #FFFFFF;
         color: #2C3E50;
       }
+
       &__s--btn {
         background-color: #0096C7;
         color: $lightColor;
       }
     }
+
     &--blogs {
       @include alignment;
 
@@ -422,12 +451,14 @@ $width-100: 100%;
             color: #FFFFFF;
           }
         }
+
         &--title {
           font-weight: 700;
           font-size: 20px;
           line-height: 30px;
           color: #2C3E50;
         }
+
         &--lead {
           width: 80%;
           font-weight: 400;
@@ -437,6 +468,7 @@ $width-100: 100%;
           padding-bottom: 8px;
           border-bottom: 0.5px solid #9099A3;
         }
+
         &--group {
           display: flex;
           align-items: center;
@@ -457,6 +489,7 @@ $width-100: 100%;
         }
       }
     }
+
     &--btn {
       border: 2px solid #9099A3;
       border-radius: 12px;
@@ -491,6 +524,7 @@ $width-100: 100%;
           font-size: 20px;
           color: #2C3E50;
         }
+
         p {
           width: 70%;
           font-weight: 400;
@@ -500,6 +534,7 @@ $width-100: 100%;
           margin-top: 10px;
         }
       }
+
       &__btns {
         display: flex;
         flex-direction: column;
@@ -513,6 +548,7 @@ $width-100: 100%;
           border-radius: 10px;
           transition: all .4s ease-in;
         }
+
         &--first {
           background: #0096C7;
           color: $lightColor;
@@ -521,6 +557,7 @@ $width-100: 100%;
             transform: translateY(2px);
           }
         }
+
         &--second {
           background-color: transparent;
 
@@ -532,6 +569,7 @@ $width-100: 100%;
         }
       }
     }
+
     &--group {
       @include alignment;
       align-items: start;
@@ -545,6 +583,7 @@ $width-100: 100%;
           font-size: 36px;
           color: $lightColor;
         }
+
         p {
           width: 55%;
           font-weight: 400;
@@ -553,6 +592,7 @@ $width-100: 100%;
           color: #9099A3;
         }
       }
+
       &__form {
         width: 62%;
 
@@ -567,6 +607,7 @@ $width-100: 100%;
             font-size: 14px;
             color: #9099A3;
           }
+
           input {
             width: 100%;
             height: 60px;
@@ -578,6 +619,7 @@ $width-100: 100%;
             color: $lightColor;
           }
         }
+
         &--group {
           @include alignment;
 
@@ -588,6 +630,7 @@ $width-100: 100%;
             line-height: 20px;
             color: #FFFFFF;
           }
+
           button {
             padding: 12px 84px;
             font-weight: 700;
@@ -623,6 +666,7 @@ $width-100: 100%;
       color: $lightColor;
       margin-bottom: 42px;
     }
+
     &--blog {
       width: 88%;
       height: 205px;
@@ -649,6 +693,7 @@ $width-100: 100%;
           height: 100%;
         }
       }
+
       p {
         font-weight: 400;
         font-size: 12px;
@@ -656,6 +701,7 @@ $width-100: 100%;
         text-align: center;
         color: $lightColor;
       }
+
       &__group {
         font-weight: 400;
         font-size: 12px;
@@ -684,11 +730,13 @@ $width-100: 100%;
 
     &--desc {
       width: 20%;
+
       h1 {
         @include alignment;
         font-size: 36px;
         color: $lightColor;
       }
+
       &__img {
         width: 178px;
         height: 90px;
@@ -699,6 +747,7 @@ $width-100: 100%;
         }
       }
     }
+
     &--accordion {
       width: 72%;
 
@@ -711,6 +760,7 @@ $width-100: 100%;
         input {
           display: none;
         }
+
         &--title {
           cursor: pointer;
           font-weight: 500;
@@ -729,10 +779,12 @@ $width-100: 100%;
             transition: all 0.3s ease;
           }
         }
+
         .title3 {
           display: block;
           width: 73%;
         }
+
         &--wrap {
           margin-top: 2px;
           max-height: 0;
@@ -747,9 +799,11 @@ $width-100: 100%;
             padding: 15px 0;
           }
         }
+
         input:checked + .answers--accordion__accordion--title i {
           transform: rotate(180deg);
         }
+
         input:checked ~ .answers--accordion__accordion--wrap {
           max-height: 500px;
         }
@@ -769,6 +823,7 @@ $width-100: 100%;
     &--logo {
       width: 12%;
     }
+
     &--blogs {
       @include alignment;
       align-items: start;
@@ -785,11 +840,13 @@ $width-100: 100%;
           font-size: 18px;
           color: $lightColor;
         }
+
         a {
           font-weight: 400;
           font-size: 14px;
           color: #9099A3;
         }
+
         p {
           font-weight: 400;
           font-size: 14px;
@@ -802,6 +859,7 @@ $width-100: 100%;
           }
         }
       }
+
       &__blog2 {
         display: flex;
         flex-direction: column;
@@ -813,6 +871,7 @@ $width-100: 100%;
           font-size: 18px;
           color: $lightColor;
         }
+
         p {
           font-weight: 400;
           font-size: 14px;
@@ -826,6 +885,7 @@ $width-100: 100%;
         }
       }
     }
+
     &--icons {
       width: 14%;
       display: flex;
@@ -838,6 +898,7 @@ $width-100: 100%;
         font-size: 18px;
         color: $lightColor;
       }
+
       &__blogs {
         display: flex;
         flex-wrap: wrap;
@@ -852,6 +913,7 @@ $width-100: 100%;
         }
       }
     }
+
     &--bottom {
       @include alignment;
       width: 100%;
@@ -862,6 +924,7 @@ $width-100: 100%;
         font-size: 9px;
         color: #9099A3;
       }
+
       &__group {
         display: flex;
         align-items: center;
@@ -873,6 +936,7 @@ $width-100: 100%;
           text-decoration-line: underline;
           color: #9099A3;
         }
+
         div {
           display: flex;
           align-items: center;
@@ -880,5 +944,98 @@ $width-100: 100%;
         }
       }
     }
+  }
+}
+
+// sign-in
+#signIn {
+  .signIn {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--nav {
+      img {
+        width: 100px;
+        height: 100px;
+        margin-left: 200px;
+      }
+
+      h1 {
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-size: 36px;
+        line-height: 54px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 30px 0;
+      }
+
+      input {
+        background: #FFFFFF;
+        border-radius: 15px;
+        width: 495px;
+        height: 63px;
+        padding-left: 20px;
+        box-shadow: 10px 10px 18px rgba(0, 0, 0, 0.26), -10px -10px 24px rgba(0, 0, 0, 0.26);
+      }
+
+      &__hero {
+        input {
+          margin: 20px 0;
+          background: #FFFFFF;
+          border-radius: 15px;
+          width: 500px;
+          height: 63px;
+          padding-left: 20px;
+          box-shadow: 10px 10px 18px rgba(0, 0, 0, 0.26), -10px -10px 24px rgba(0, 0, 0, 0.26);
+
+          input::placeholder {
+            color: #1a1a2f;
+          }
+
+        }
+
+
+        &--btn {
+          padding: 30px 0;
+          text-align: center;
+
+          button {
+            box-shadow: 10px 10px 18px rgba(255, 255, 255, 0.15), -10px -10px 24px rgba(255, 255, 255, 0.13);
+            background: linear-gradient(180deg, rgba(13,17,68,0.53) -21.43%, rgba(255, 255, 255, 0.51) 123.66%);
+            color: #FFFFFF;
+            padding: 9px 89px;
+            cursor: pointer;
+            transition: .4s;
+            font-size: 24px;
+            line-height: 36px;
+            border-radius: 15px;
+
+            &:hover {
+              transform: scale(1.1);
+              border: 1px solid black;
+              background: rgba(26, 92, 255, 0.87);
+            }
+          }
+
+        }
+
+      }
+
+      a {
+        margin-left: 181px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        text-decoration-line: underline;
+        color: #9099A3;
+        padding: 5px 0;
+      }
+
+    }
+
   }
 }
