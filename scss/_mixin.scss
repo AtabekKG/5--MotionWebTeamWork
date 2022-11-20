@@ -1,0 +1,52 @@
+
+// Alignment
+@mixin alignment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// Alignment center
+@mixin alignment-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin d-f_jc-end_al-start {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+}
+
+@mixin d-f_js-sb {
+  display: flex;
+  justify-content: space-between;
+}
+
+// border and outline NONE
+@mixin b-and-o__none {
+  border: none;
+  outline: none;
+}
+
+// Sections title
+@mixin title {
+  font-weight: 700;
+  font-size: 48px;
+  color: $lightColor;
+}
+
+// position fixed top left 0
+@mixin p-f_t-0_left-0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@mixin p-f_t-0_right-0 {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
